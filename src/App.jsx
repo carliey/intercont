@@ -28,7 +28,13 @@ function App() {
         </div>
       </header>
       <main className="flex-1 flex flex-col justify-center items-center gap-20">
-        <div className="">
+        <div
+          className=""
+          style={{
+            height: "100%",
+            position: "relative",
+          }}
+        >
           <Lottie
             options={{
               loop: true,
@@ -41,6 +47,12 @@ function App() {
             height={400}
             width={400}
           />
+          <p
+            className="absolute bottom-6 text-white left-[12%] text-[20px] font-[400]"
+            style={{ fontFamily: "technor" }}
+          >
+            Big Changes Are on the Horizon!
+          </p>
         </div>
         <div className="flex justify-between gap-8">
           <img src={instagram} className="h-[50px] w-[50px]" />
